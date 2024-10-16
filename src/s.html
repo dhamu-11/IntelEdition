@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px; /* Ensure proper padding for small screens */
+      }
+
+      p {
+        margin-bottom: 10px; /* Space between paragraphs */
+        line-height: 1.6; /* Improved readability */
+        word-wrap: break-word; /* Prevents words from overflowing */
+        hyphens: auto; /* Helps with breaking long words correctly */
+      }
+
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column; /* Ensure columns stack vertically on smaller screens */
+        }
+
+        .col-sm-12 {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 16px; /* Slightly smaller font for small screens */
+          word-wrap: break-word; /* Prevents overflow */
+        }
+
+        .img-fluid {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <p
+            style="
+              font-size: 17px;
+              color: #bd8526;
+              font-weight: 600;
+              line-height: 1.6;
+            "
+          >
+            Rendering excellent services in the field of books, journals, and
+            multimedia publishing services. A high-quality service provider in
+            next-generation digital services and consulting, INTELEDITION
+            enables clients in various countries to navigate their digital
+            transformation.
+          </p>
+          <p style="line-height: 1.6">
+            We are a digital media publishing company, offering practically
+            tailored solutions to meet publisher requirements. We will help you
+            make the book as best as can be by assisting you in picking the
+            right options and guiding you seamlessly through the different
+            stages of the publishing process. We are an integrated digital
+            media, offering pragmatic solutions - from ideation, instauration &
+            deliverance for Publishers through innovative strategies with acute
+            focus on results.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img
+            class="img-fluid"
+            src="../assest/images/demo/ebook_conversion.jpg"
+            alt="Ebook Conversion"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/* General styles */
+body {
+  color: #666;
+  background-color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box icon styles */
+.box-icon {
+  position: relative;
+  padding-left: 70px; /* Space for the icon */
+  margin: 30px 0; /* Margin around the box icon */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Optional border */
+  padding: 20px; /* Padding for content inside the box */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+.box-icon:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Icon styles */
+.box-icon > i {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  font-size: 36px; /* Reduced size of the icon */
+}
+
+/* Title styles */
+.box-icon .box-icon-title h5,
+.box-icon .box-icon-title h6 {
+  margin-top: 10px; /* Gap between the icon and the title */
+  margin-top: 40px;
+}
+
+/* Link styles */
+a {
+  color: rgb(63, 17, 17);
+  text-decoration: none;
+  transition: all 0.3s; /* Smooth transition for link color */
+}
+
+a:hover {
+  color: rgb(133, 102, 102); /* Color change on hover */
+}
+
+/* More link styles */
+.box-icon a.box-icon-more {
+  color: #000;
+  display: block;
+  text-align: right;
+  margin-top: 15px; /* Space above "Learn More" */
+}
+
+/* Font styles */
+.font-lato {
+  font-weight: 300;
+  font-family: "Lato", Arial, Helvetica, sans-serif !important;
+}
+
+.weight-300 {
+  font-weight: 300 !important;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 760px) {
+  .box-icon {
+    margin: 30px 0; /* Margin for smaller screens */
+    padding-left: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .box-icon > i {
+    font-size: 30px; /* Further reduce icon size on smaller screens */
+  }
+}
+
+/* Other global styles */
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}

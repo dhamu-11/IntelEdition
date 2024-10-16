@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Inteledition E-Publishing Company</title>
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Fav-icon -->
+    <link rel="icon" href="../assest/images/logo-color-1.png" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- I -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Footer -->
+    <link rel="stylesheet" href="Footers.css" />
+    <!-- <link rel="stylesheet" href="foot.css" /> -->
+    <!--  -->
+    <link rel="stylesheet" href="H2.css" />
+    <!-- Service CSS -->
+    <link rel="stylesheet" href="Services.css" />
+    <link rel="stylesheet" href="alternate.css" />
+    <style>
+      .navbar {
+        background-color: #ffffff; /* White background */
+        border-bottom: 2px solid #f28a30; /* Optional: Orange underline for navbar */
+      }
+      .navbar-toggler {
+        border: none;
+      }
+      .navbar-toggler-icon {
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Logo and title alignment to the left (no stacking on mobile) */
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 0px; /* Space between the logo and title */
+      }
+
+      /* Adjust title styling */
+      .navbar-brand h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        color: #333;
+      }
+
+      /* Slogan styling */
+      .navbar-brand .slogan {
+        font-size: 14px;
+        color: #555;
+        margin: 0;
+      }
+
+      /* Navbar background and orange color scheme */
+      .navbar {
+        background-color: #ffffff;
+        border-bottom: 2px solid #150f0a; /* Orange underline for navbar */
+      }
+
+      .navbar-nav .nav-link {
+        color: #25180d; /* Orange color for the links */
+        margin-left: 15px;
+        font-weight: 500;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #d26d00; /* Darker shade on hover */
+      }
+
+      /* Styling the navbar toggler icon */
+      .navbar-toggler {
+        border: none;
+        background-color: transparent;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(242, 138, 48, 0.7)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        /* Light orange color (rgba(242, 138, 48, 0.7)) for the icon */
+      }
+
+      /* Responsive behavior */
+      @media (max-width: 768px) {
+        .navbar-brand {
+          flex-direction: row; /* Keep logo and title on the same row */
+          align-items: center;
+          justify-content: flex-start;
+        }
+
+        .navbar-brand h1 {
+          font-size: 20px; /* Reduce title size on smaller screens */
+        }
+
+        .navbar-brand .slogan {
+          font-size: 12px; /* Reduce slogan size for better spacing */
+        }
+
+        .navbar-nav .nav-link {
+          font-size: 14px; /* Adjust link size on smaller screens */
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-left"
+        >
+          <!-- Logo with title and slogan -->
+          <div class="navbar-brand d-flex align-items-center">
+            <a href="#">
+              <img
+                src="../assest/images/Logo_Nav.png"
+                width="55"
+                height="50"
+                alt="Inteledition"
+                title="Inteledition"
+              />
+            </a>
+            <div class="ms-3">
+              <h1 class="m-0">Inteledition</h1>
+              <p class="slogan m-0">Igniting Ideas, Inspiring Innovation</p>
+            </div>
+          </div>
+
+          <!-- Navbar toggle button and links -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicess">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#careers">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contactus.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="box-inner">
+          <div class="timeline">
+            <div class="timeline-item timeline-item-bordered">
+              <div class="timeline-entry rounded">
+                <i
+                  class="fa fa-newspaper"
+                  style="color: orange"
+                  aria-hidden="true"
+                ></i>
+                <div class="timeline-vline"></div>
+              </div>
+              <h2 class="uppercase bold timeline-heading">Typesetting</h2>
+              <p class="timeline-content">
+                An eye to page layout, design, and the ability to meet deadlines
+                reliably are what contribute to publishing success. With several
+                years of experience in various typesetting publishing tools and
+                related services, Inteledition’s workforce of highly qualified
+                staff is time-efficient in their practice and skilled to handle
+                any aspect of typesetting work. We adhere to strict formatting
+                guidelines and use the best software to maintain formatting
+                consistency. We provide typesetting services through LaTeX and
+                InDesign to create and structure content in a captivating format
+                for eBooks and print books. All composition projects are tracked
+                through automated publishing tools and workflow in a cloud-based
+                platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <h4 class="letter-spacing-1">ABOUT US</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos rem odit reprehenderit quisquam nihil libero
+              cupiditate ullam, in, vel sint eveniet illum qui quod, vero earum
+              facere eum quasi quidem?
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="letter-spacing-1">Inteledition Info</h4>
+            <address>
+              <ul class="list-unstyled">
+                <li class="footer-sprite address">
+                  #2A Ahimsapuram Street<br />
+                  Sellur<br />
+                  Madurai-625002
+                </li>
+                <li class="footer-sprite phone">
+                  Phone: 7339690789<br />
+                  Mobile: 123456789
+                </li>
+                <li class="footer-sprite email">
+                  <a href="mailto:info@inteledition.com">inteledition.com</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <h4 class="letter-spacing-1">QUICK LINKS</h4>
+            <ul class="footer-links list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+            <p>Subscribe to our Newsletter to get Important News and Offers</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <ul class="pull-right nomargin list-inline mobile-block"></ul>
+          © All Rights Reserved, Inteledition E-Publishing Company 2024
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

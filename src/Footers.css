@@ -1,0 +1,90 @@
+#footer {
+  color: rgba(255, 255, 255, 0.6);
+  background: #695454;
+
+  background-image: initial;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(49, 49, 49);
+  background: -moz-linear-gradient(top, #555555 0%, #313131 100%);
+}
+
+#footer > .container {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.container {
+  position: relative;
+}
+
+#footer h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 18px; /* Adjusted font size for titles */
+  margin-bottom: 25px;
+}
+
+#footer p {
+  line-height: 1.5; /* Improved readability */
+}
+
+#footer .row > div {
+  margin-bottom: 40px; /* Spacing between columns */
+}
+
+@media only screen and (max-width: 768px) {
+  #footer .row > div {
+    margin-bottom: 30px; /* Adjust spacing on medium devices */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #footer .copyright {
+    text-align: center;
+  }
+
+  #footer h4 {
+    margin-top: 30px; /* Space above titles on mobile */
+  }
+
+  #footer .input-group {
+    flex-direction: column; /* Stack input group on mobile */
+  }
+
+  #footer .input-group input {
+    margin-bottom: 10px; /* Spacing for stacked inputs */
+  }
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#footer a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+/*  */
+
+#footer .copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 25px 0;
+  font-size: 13px;
+}
+#footer address {
+  background: url(../assest/images/world-map.png);
+}
+#footer address {
+  margin-bottom: 0;
+}
+#footer ul {
+  margin-bottom: 0;
+}

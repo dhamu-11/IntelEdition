@@ -1,0 +1,7 @@
+npm init -y
+npm install bootstrap 
+
+include main.scss
+compile css
+
+include "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
