@@ -53,18 +53,40 @@
 .navbar-toggler {
   border: none;
   background-color: transparent;
+  outline: none; /* Removes the focus outline */
+  box-shadow: none; /* Removes any potential box-shadow */
 }
-
+.navbar-toggler:focus {
+  outline: none; /* Ensure no outline on focus */
+  box-shadow: none; /* Ensure no shadow around toggler */
+}
 .navbar-toggler-icon {
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(242, 138, 48, 0.7)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
   /* Light orange color (rgba(242, 138, 48, 0.7)) for the icon */
 }
 
+/* Hover effect for the navbar toggler */
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler:focus .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 123, 0, 0.9)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  /* Darker orange on hover (rgba(255, 123, 0, 0.9)) */
+}
+
+/* Change the icon when the navbar is collapsed (menu is open) */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 87, 34, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  /* Bright orange color (rgba(255, 87, 34, 1)) for expanded state */
+}
 /* Responsive behavior */
 @media (max-width: 768px) {
-  .navbar-nav .nav-link:hover {
-    color: #d26d00; /* Darker shade on hover */
+  .navbar-collapse .nav-link {
+    color: black; /* Default black on small screens */
   }
+
+  .navbar-collapse .nav-link:hover {
+    color: rgba(255, 123, 0, 0.9); /* Change to dark orange on hover */
+  }
+
   .navbar-brand {
     flex-direction: row; /* Keep logo and title on the same row */
     align-items: center;
